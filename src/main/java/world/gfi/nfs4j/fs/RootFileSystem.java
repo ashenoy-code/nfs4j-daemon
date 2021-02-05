@@ -258,4 +258,14 @@ public class RootFileSystem implements VirtualFileSystem {
     public NfsIdMapping getIdMapper() {
         return mainFs.getIdMapper();
     }
+
+    @Override
+    public boolean getCasePreserving() {
+        return true;
+    }
+
+    @Override
+    public boolean getCaseInsensitive() {
+        return false;
+    }
 }

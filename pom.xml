@@ -101,8 +101,28 @@
     <dependencies>
         <dependency>
             <groupId>org.dcache</groupId>
+            <artifactId>oncrpc4j-core</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.dcache</groupId>
+            <artifactId>oncrpc4j-rpcgen</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.dcache</groupId>
+            <artifactId>oncrpc4j-portmapdaemon</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.dcache</groupId>
             <artifactId>nfs4j-core</artifactId>
-            <version>0.18.2</version>
+            <version>0.21.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.dcache</groupId>
+            <artifactId>dcache-common</artifactId>
+            <version>7.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.yaml</groupId>
@@ -173,25 +193,5 @@
     </dependencies>
 
     <repositories>
-        <repository>
-            <id>dcache releases</id>
-            <url>https://download.dcache.org/nexus/content/repositories/releases</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>dcache snapshots</id>
-            <url>https://download.dcache.org/nexus/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
     </repositories>
 </project>
